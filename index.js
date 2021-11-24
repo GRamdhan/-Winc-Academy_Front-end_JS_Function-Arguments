@@ -1,21 +1,14 @@
-//console.log("Make the dough");
-const makePizza = function () {
-    console.log("Roll out the dough");
-    console.log("Put the toppings on the dough");
-    console.log("Put the pizza in the oven");
+const paintwall = function (color) {
+    console.log("The wall had been painted " + color);
 };
-/*for (var i = 0; i < 3; i++) {
-    makePizza();
-}
-*/
-const makeSushi = function () {
-    console.log("Spread prepared sushi rice on the nori");
-    console.log("Put toppings on the rice");
-    console.log("Roll the sushi and cut in pieces")
+
+paintwall("green");
+paintwall("blue");
+
+// paintwall(); gets result The wall has been painted undefined
+
+const wallsidecolor = function (side, color) {
+    console.log("The " + side + " wall has been painted " + color);
 };
-for (var i = 0; i < 3; i++) {
-    makeSushi();
-}
-for (var i = 0; i < 2; i++) {
-    makePizza();
-}
+
+wallsidecolor("east", "blue");
